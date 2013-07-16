@@ -35,7 +35,8 @@
     "karma-safari-launcher": "latest",
     "karma-firefox-launcher": "latest",
     "karma-ng-scenario": "latest",
-    "chai": "1.4.0"
+    "chai": "1.4.0",
+    "bower": "0.10.x"
   },
   "engines": {
     "node": ">=0.8.0"
