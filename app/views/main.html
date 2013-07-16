@@ -1,9 +1,13 @@
-<div class="hero-unit">
-  <h1>'Allo, 'Allo!</h1>
-  <p>You now have</p>
-  <ul>
-      <li ng-repeat="thing in awesomeThings">{{thing}}</li>
-  </ul>
-  <p>installed.</p>
-  <h3>Enjoy coding! - Yeoman</h3>
-</div>
+<ul class="unstyled">
+    <li ng-repeat="learning in learnings">
+        <div class="learning">
+            <div class="row-fluid">
+                <div class="span6"><h3>{{learning.author}}</h3></div>
+                <div class="span6"><h4>{{learning.date | date:'short'}}</h4></div>
+            </div>
+            <div class="row-fluid">
+                <div class="span12"><blockquote>{{learning.message}}</blockquote></div>
+            </div>
+        </div>
+    </li>
+</ul>

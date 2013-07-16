@@ -2,9 +2,8 @@
 
 angular.module('themitiltApp')
   .controller('MainCtrl', function ($scope) {
-    $scope.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
+    $scope.learnings = [
+        new Learning('Learning 1', 'Victor Hugo', new Date(2013, 6, 28, 13, 7, 43)),
+        new Learning('Learning 2', 'Gandhi', new Date(2013, 6, 27, 9, 32, 14))
     ];
   });
