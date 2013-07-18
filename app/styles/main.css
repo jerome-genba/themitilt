@@ -4,6 +4,15 @@ body {
     color: #333;
 }
 
+.main-panel {
+    max-width: 940px;
+    margin: 0 auto;
+}
+
+.main-title {
+    margin: 50px 0px;
+}
+
 .learning {
     margin: 10px auto;
     width: 470px;
