@@ -11,6 +11,11 @@ describe('Domain: LearningRepository', function () {
         ]);
     });
 
+    it('should instantiate repository correctly when no initial learnings', function() {
+        learningRepository = new LearningRepository();
+        learningRepository.should.not.be.an('undefined');
+    });
+
     it('should get all Learnings from repository', function () {
         learningRepository.getAll().length.should.be.equal(2);
     });

@@ -4,3 +4,5 @@ function Learning(message, author, date){
     this.author = author;
     this.date = date;
 }
+
+exports.Learning = Learning;

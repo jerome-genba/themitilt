@@ -1,11 +1,15 @@
+var Learning = require('../domain/learning');
+
 function LearningRepository(initialRepo) {
 
     var nextId = 1;
     var learnings = [];
 
-    for(var i = 0; i < initialRepo.length; i++) {
-        assignNextId(initialRepo[i]);
-        learnings.push(initialRepo[i]);
+    if (initialRepo) {
+        for(var i = 0; i < initialRepo.length; i++) {
+            assignNextId(initialRepo[i]);
+            learnings.push(initialRepo[i]);
+        }
     }
 
     this.getAll = function() {
@@ -22,3 +26,5 @@ function LearningRepository(initialRepo) {
         nextId++;
     }
 }
+
+exports.LearningRepository = LearningRepository;
